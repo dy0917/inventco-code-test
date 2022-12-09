@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import fake from './controller/fake';
 import { getConfigs } from './tools/config';
-dotenv.config();
+dotenv.config({ path: '.env.dev' });
 
 (async () => {
   console.log(
