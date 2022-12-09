@@ -7,7 +7,7 @@ interface Configs {
 }
 let configs: Configs;
 
-export async function getConfigs() {
+export async function getConfigs(): Promise<Configs> {
   try {
     // if configs is setted, getting configs from server is not required
     if (configs) return configs;
