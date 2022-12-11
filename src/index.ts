@@ -14,7 +14,7 @@ dotenv.config({ path: '.env.dev' });
   app.use(express.json());
 
   app.get('/', (req: Request, res: Response) => {
-    res.send('Express + TypeScript Server');
+    res.send('Express TypeScript Server is up');
   });
 
   app.get('/fake/config', fake.getSettings);
